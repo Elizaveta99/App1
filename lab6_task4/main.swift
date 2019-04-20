@@ -8,5 +8,11 @@
 
 import Foundation
 
-print("Hello, World!")
+func answer(str:String) {
+    let arr = str.split(separator: " ")
+    
+}
 
+print("String")
+var inputStr = readLine()
+answer(str: inputStr!)
