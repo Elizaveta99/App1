@@ -9,10 +9,15 @@
 import Foundation
 
 func answer(str:String) {
-    let arr = str.split(separator: " ")
-    
+    var arr: [Substring] = str.split(separator: " ")
+    arr.reverse();
+    for word in arr {
+        let ans = String(word.reversed())
+        print(ans, terminator: " ")
+    }
+    print()
 }
 
-print("String")
+print("String :")
 var inputStr = readLine()
 answer(str: inputStr!)
